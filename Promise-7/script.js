@@ -38,6 +38,10 @@ function getGeolocation(options) {
 // Like this: 
 
 getGeolocation(options)
-  .then(pos => { })
-  .catch(err => { })
+  .then(pos => { 
+    onsuccess(pos)
+  })
+  .catch(err => { 
+    onerror(err)
+  })
 
